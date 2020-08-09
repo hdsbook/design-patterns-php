@@ -14,3 +14,4 @@ $facade->doSomeThing();
 
     Facade 模式定義了一個更高層的介面(為子系統中的一組介面定義一個統一介面)，使子系統更容易使用。
 </pre>
+<a href="https://www.notion.so/Facade-f5aed9a17bb04b6280a33dacc35d610a" target="_blank">更多…</a>
