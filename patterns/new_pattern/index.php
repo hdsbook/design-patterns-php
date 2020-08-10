@@ -2,13 +2,7 @@
 
 require __DIR__ . '../../autoload.php';
 
-use new_pattern\Newpattern;
 
-$new_pattern = new Newpattern();
-
-/**
- * Newpattern
- */
 ?>
 <pre>
     Newpattern 或稱 "模式"
