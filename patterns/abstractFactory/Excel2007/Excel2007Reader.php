@@ -1,6 +1,6 @@
 <?php
 
-namespace abstract_factory\Excel2007;
+namespace abstractFactory\Excel2007;
 
 /**
  * 2007 版試算表 reader

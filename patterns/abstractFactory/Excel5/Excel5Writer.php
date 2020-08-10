@@ -1,13 +1,13 @@
 <?php
 
-namespace abstract_factory\Excel2007;
+namespace abstractFactory\Excel5;
 
 /**
- * 2007 版試算表 writer
+ * 1993 試算表 writer
  */
-class Excel2007Writer
+class Excel5Writer
 {
-    private $ext = 'xlsx';
+    private $ext = 'xls';
 
     public function arrayToExcel($fileName, $data)
     {

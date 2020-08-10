@@ -1,6 +1,6 @@
 <?php
 
-namespace abstract_factory\Excel5;
+namespace abstractFactory\Excel5;
 
 /**
  * 1993 試算表 reader

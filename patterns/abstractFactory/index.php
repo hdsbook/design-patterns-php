@@ -1,7 +1,7 @@
 <?php
 
-use abstract_factory\ExcelFactory\ExcelReaderFactory;
-use abstract_factory\ExcelFactory\ExcelWriterFactory;
+use abstractFactory\ExcelFactory\ExcelReaderFactory;
+use abstractFactory\ExcelFactory\ExcelWriterFactory;
 
 require __DIR__ . '../../autoload.php';
 

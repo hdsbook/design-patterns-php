@@ -1,6 +1,6 @@
 <?php
 
-namespace abstract_factory\ExcelFactory;
+namespace abstractFactory\ExcelFactory;
 
 /**
  * 試算表工廠 (抽象工廠)

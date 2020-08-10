@@ -1,9 +1,9 @@
 <?php
 
-namespace abstract_factory\ExcelFactory;
+namespace abstractFactory\ExcelFactory;
 
-use abstract_factory\Excel2007\Excel2007Writer;
-use abstract_factory\Excel5\Excel5Writer;
+use abstractFactory\Excel2007\Excel2007Writer;
+use abstractFactory\Excel5\Excel5Writer;
 
 /**
  * 試算表寫入器工廠 (實體工廠)
