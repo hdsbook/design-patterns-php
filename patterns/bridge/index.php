@@ -39,6 +39,8 @@ $student->selfIntro(new DetailedSelfIntro());
     若不用bridge，使用者與自我介紹的方式將會有 n * n 種不同的結果 (組合爆炸)
     使用 bridge 後，能夠產生 1 + 1 > 2 的效果
     且抽象層的變化與實作層的變化是互相獨立的
+
+    p.s. 這個模式感覺就是考慮物件多型的 strategy 模式
 </pre>
 
 <a href="https://www.notion.so/Newpattern-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">更多…</a>
