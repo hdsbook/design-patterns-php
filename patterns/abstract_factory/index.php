@@ -1,51 +1,52 @@
 <?php
 
-use abstract_factory\Mac256Factory;
-use abstract_factory\Mac512Factory;
+use abstract_factory\ExcelFactory\ExcelReaderFactory;
+use abstract_factory\ExcelFactory\ExcelWriterFactory;
 
 require __DIR__ . '../../autoload.php';
 
-$factory512 = new Mac512Factory();
-$factory256 = new Mac256Factory();
+// 要做閱讀
+$excelFactory = new ExcelReaderFactory();
+$excel5Reader = $excelFactory->Excel5();
+$excel2007Reader = $excelFactory->Excel2007();
 
-$macAir512 = $factory512->produceMacAir();
-$macPro512 = $factory512->produceMacPro();
-$macAir256 = $factory256->produceMacAir();
-$macPro256 = $factory256->produceMacPro();
+// 要做寫入
+$excelFactory = new ExcelWriterFactory();
+$excel5Writer = $excelFactory->Excel5();
+$excel2007Writer = $excelFactory->Excel2007();
 
-$macAir512->showSpecInfo();
-$macPro512->showSpecInfo();
-$macAir256->showSpecInfo();
-$macPro256->showSpecInfo();
+$excel5Writer->arrayToExcel('舊版檔案', ['一些資料']);
+$excel2007Writer->arrayToExcel('新版檔案', ['一些資料']);
 
-$type = 'pro';
-$ssd = 512;
-$macFactory = ($ssd == 512) ?
-    new Mac512Factory() : new Mac256Factory();
-$newMac = ($type == 'pro') ?
-    $macFactory->produceMacPro() : $macFactory->produceMacAir();
-$newMac->showSpecInfo();
+$excel5Reader->excelToArray('舊版檔案', ['一些資料']);
+$excel2007Reader->excelToArray('新版檔案', ['一些資料']);
 
 ?>
 <pre>
     Abstract Factory 或稱 "抽象工廠模式"
 
     上例若單純以 switch 實踐，可能要寫為：
-    $mac = null;
-    switch ($type) {
-        case 'macbook pro':
-            $mac = ($ssdSpace == 512) ?
-                new MacPro512() :
-                new MacPro256();
+    $excelObj = null;
+    switch ($purpose) {
+        case 'read':
+            $excelObj = ($ext == 'xls') ?
+                new Excel5Reader() :
+                new Excel2007Reader();
             break;
-        case 'macbook air':
-            $mac = ($ssdSpace == 512) ?
-                new MacAir512() :
-                new MacAir256();
+        case 'write':
+            $excelObj = ($ext == 'xls') ?
+                new Excel5Writer() :
+                new Excel2007Writer();
             break;
     }
     或許上例程式碼看上去精簡許多，不用再製造那麼多的 class
-    但是 選擇型號 與 選擇SSD規格 的程式已經耦合在一起了
+    但是 選擇 讀/寫 與 選擇 新/舊版 的程式已經耦合在一起了
+    且未來若要調整選擇的邏輯，則需 "兩頭改"
+    並且這樣的寫法等於將選擇的邏輯放到了主程式由主程式負責，降低主程式的可讀性與內聚性
+
+    採用了 abstract factory (ExcelFactory) 後，選擇的實作被抽象化、物件的實體化過程被封裝起來了
+    主程式甚至不需要知道自己用的是什麼具體物件，只需要信任並知道如何使用來自抽象工廠生產出來的物件
+    物件的實體化過程也交由衍生自抽象工廠的具體工廠 (ExcelReaderFactory、ExcelWriterFactory) 來負責
 </pre>
 
 <a href="https://www.notion.so/Newpattern-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">更多…</a>
