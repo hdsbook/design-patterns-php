@@ -28,4 +28,6 @@ $trainTraveler->travelTo('台北');
     概念上來看，這些演算法完成的都是相同的工作，只是實作不同
 </pre>
 
-<a href="https://www.notion.so/Strategy-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">更多…</a>
+<a href="https://www.notion.so/Strategy-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">
+    更多…
+</a>

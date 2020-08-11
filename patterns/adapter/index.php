@@ -25,4 +25,6 @@ $ball->draw();
     Ball3d 衍生自 Shape3dInterface
     Ball 衍生自 ShapeInterface，讓 Ball3d 可以為 ShapeInterface 所用，並維持 ShapeInterface 的多型
 </pre>
-<a href="https://www.notion.so/Adapter-2f719248cea74d4b85f2c6b8f82ea735" target="_blank">更多…</a>
+<a href="https://www.notion.so/Adapter-2f719248cea74d4b85f2c6b8f82ea735" target="_blank">
+    更多…
+</a>
