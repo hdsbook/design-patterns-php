@@ -23,6 +23,6 @@ $goodStu->study();
     ConcreteComponent 讓 Decorator 物件為自己增加功能。
 </pre>
 
-<a href="https://www.notion.so/Decorator-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">
+<a href="https://www.notion.so/17-Decorator-7e382966369e4d4088433122ae51570f" target="_blank">
     更多…
 </a>

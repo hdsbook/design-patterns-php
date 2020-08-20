@@ -47,4 +47,6 @@ $observable->notify();
     (3) 每日通知觸發時，進行不同通知的發送 (如發送今日課程通知、未完成作業通知、課程報名通知、考試通知…)
 </pre>
 
-<a href="https://www.notion.so/Newpattern-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">更多…</a>
+<a href="https://www.notion.so/18-Observer-751c3839bb0d4dc7829ad8d896180aa9" target="_blank">
+    更多…
+</a>
