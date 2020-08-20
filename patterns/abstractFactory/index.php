@@ -21,6 +21,15 @@ $excel2007Writer->arrayToExcel('新版檔案', ['一些資料']);
 $excel5Reader->excelToArray('舊版檔案', ['一些資料']);
 $excel2007Reader->excelToArray('新版檔案', ['一些資料']);
 
+/**
+ * results:
+ *
+ * 正在寫入 舊版檔案.xls …
+ * 正在寫入 新版檔案.xlsx …
+ * 正在讀取 舊版檔案.xls …
+ * 正在讀取 新版檔案.xlsx …
+ */
+
 ?>
 <pre>
     Abstract Factory 或稱 "抽象工廠模式"

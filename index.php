@@ -6,7 +6,7 @@
     <li><a href="patterns/strategy">Strategy (策略模式)</a></li>
     <li><a href="patterns/bridge">Bridge (橋接模式)</a></li>
     <li><a href="patterns/abstractFactory">Abstract Factory (抽象工廠模式)</a></li>
-    <li></li>
+    <li><a href="patterns/decorator">Decorator (裝飾模式)</a></li>
     <li></li>
     <li></li>
     <li></li>
