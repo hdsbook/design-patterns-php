@@ -54,4 +54,6 @@ $stuNotify->notify();
     透過 Template Method 支援概念上相同而各步驟實作不同的系統時，我們還可以避免冗餘的出現
 </pre>
 
-<a href="https://www.notion.so/Newpattern-15218afb7e1a4e6082e8253cc1bd2bd9" target="_blank">更多…</a>
+<a href="https://www.notion.so/19-Template-Method-c321ef5353dd425e89b3205fc5b28dc6" target="_blank">
+    更多…
+</a>

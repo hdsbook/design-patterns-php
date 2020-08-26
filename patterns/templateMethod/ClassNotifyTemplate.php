@@ -33,7 +33,7 @@ abstract class ClassNotifyTemplate
     }
 
     /**
-     * 初始化
+     * 取得課程資訊
      */
     protected function getClassInfo()
     {
