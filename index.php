@@ -9,4 +9,5 @@
     <li><a href="patterns/decorator">Decorator (裝飾模式)</a></li>
     <li><a href="patterns/observer">Observer (觀察者模式)</a></li>
     <li><a href="patterns/templateMethod">Template Method (樣板方法模式)</a></li>
+    <li><a href="patterns/singleton">Singleton Method (單例模式)</a></li>
 </ol>
