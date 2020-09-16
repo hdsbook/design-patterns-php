@@ -13,6 +13,13 @@ $gunCreator = new GunCreator();
 $gun = $gunCreator->create();
 $gun->intro();
 
+
+/**
+ * results
+ *
+ * 這是一把槍
+ * 這是一位射手
+ */
 ?>
 <pre>
     Factory method 或稱 "工廠方法模式"
